@@ -525,6 +525,16 @@ Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
 
 
 
+# 查看你的架构
+arch
 
+# 如果是 aarch64 (64位 ARM)
+wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-2.5.0%2Bcpu.zip -O libtorch.zip
+
+# 如果是 armv7l (32位 ARM)
+wget https://github.com/ljk53/pytorch-rpi/releases/download/v2.0.0/libtorch-rpi-cxx11-abi-shared-2.0.0.zip -O libtorch.zip
+
+# 解压
+unzip libtorch.zip -d /home/pi/libtorch_arm
 
 
