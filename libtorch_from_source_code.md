@@ -538,3 +538,10 @@ wget https://github.com/ljk53/pytorch-rpi/releases/download/v2.0.0/libtorch-rpi-
 unzip libtorch.zip -d /home/pi/libtorch_arm
 
 
+
+
+* cd ~/pytorch
+* python tools/build_libtorch.py
+# 构建结果在：~/pytorch/build/libtorch
+
+
