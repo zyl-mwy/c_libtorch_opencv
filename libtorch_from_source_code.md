@@ -559,5 +559,6 @@ unzip libtorch.zip -d /home/pi/libtorch_arm
     --no-test \
     --no-cuda \
     --cmake-only
-
+# 5. 释放交换空间
+* sudo swapoff /swapfile && sudo rm /swapfile
 
