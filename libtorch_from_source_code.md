@@ -547,14 +547,14 @@ unzip libtorch.zip -d /home/pi/libtorch_arm
 
 
 # 1. 增加交换空间
-sudo fallocate -l 32G /swapfile
-sudo mkswap /swapfile && sudo swapon /swapfile
+* sudo fallocate -l 32G /swapfile
+* sudo mkswap /swapfile && sudo swapon /swapfile
 # 2. 减少并行任务
-export MAX_JOBS=2
+* export MAX_JOBS=2
 # 3. 使用ccache
-export USE_CCACHE=1
+* export USE_CCACHE=1
 # 4. 最小化编译
-python tools/build_libtorch.py \
+* python tools/build_libtorch.py \
     --jobs=2 \
     --no-test \
     --no-cuda \
